@@ -1,4 +1,4 @@
-# PyARCrbac
+# PyARCrbac ![PyPI - Downloads](https://img.shields.io/pypi/dm/pyarcrbac) ![PyPI - Version](https://img.shields.io/pypi/v/pyarcrbac)
 PyARCrbac is a Python library that provides functions for retrieving tokens from azure arc-enabled servers using the local metadata service. It can be used to obtain access tokens for Azure resources.
 ## Installation
 ```shell
