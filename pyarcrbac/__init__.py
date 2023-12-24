@@ -1,1 +1,1 @@
-from PyARCrbac import get_token
+from .PyARCrbac import get_token

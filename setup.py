@@ -6,7 +6,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-VERSION = '0.0.5'
+VERSION = '0.0.6'
 DESCRIPTION = 'a Python library that provides functions for retrieving tokens from local azure metadata service.'
 
 # Setting up
