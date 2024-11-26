@@ -4,18 +4,33 @@ PyARCrbac is a Python library that provides functions for retrieving tokens from
 ```shell
 pip3 install pyarcrbac
 ```
-## Usage
-Here's an example of how to use PyARCrbac to retrieve an access token:
-```python
-from pyarcrbac import get_token
-
-token = get_token()
-print(token)
-```
+# Usage
 Make sure you have the necessary permissions and environment variables set up to access the azure metadata service.
+## Graph Tokens
+Here's an example of how to use PyARCrbac to retrieve an graph access token:
+```python
+from pyarcrbac import pyrbac
+import requests
 
-## Documentation
-The main function in PyARCrbac is get_token(), which retrieves the challenge token from the metadata service. It returns the access token as a JSON object.
+def fetch_device_data():
+  url = "https://graph.microsoft.com/v1.0/devices"
+  headers = {"Authorization": f"Bearer {pyrbac.graph_token()}"}
+  response = requests.get(url, headers=headers)
+  return response.json()
+```
+## Azure Management Tokens
+Here's an example of how to use PyARCrbac to retrieve an management access token:
+```python
+from pyarcrbac import pyrbac
+import requests
+
+def fetch_device_data():
+  url = "https://management.azure.com/subscriptions"
+  headers = {"Authorization": f"Bearer {pyrbac.mgmt_token()}"}
+  response = requests.get(url, headers=headers)
+  return response.json()
+```
+
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
