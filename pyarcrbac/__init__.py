@@ -1,1 +1,1 @@
-from .PyARCrbac import PyARC
+from .PyARCrbac import pyrbac
