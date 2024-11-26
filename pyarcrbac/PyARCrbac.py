@@ -1,6 +1,6 @@
 import requests
 
-class PyARCRbac:
+class PyARC:
     def __init__(self):
         self.mgmturl = "http://127.0.0.1:40342/metadata/identity/oauth2/token?api-version=2019-11-01&resource=https%3A%2F%2Fmanagement.azure.com"
         self.graphurl = "http://127.0.0.1:40342/metadata/identity/oauth2/token?api-version=2019-11-01&resource=https%3A%2F%2Fgraph.microsoft.com"
