@@ -6,8 +6,8 @@ here = os.path.abspath(os.path.dirname(__file__))
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-VERSION = '0.0.6'
-DESCRIPTION = 'a Python library that provides functions for retrieving tokens from local azure metadata service.'
+VERSION = '0.0.7'
+DESCRIPTION = 'A Library that simplifies interaction with Azure / ARC Metadata services.'
 
 # Setting up
 setup(
@@ -25,10 +25,11 @@ setup(
     readme = "README.MD",
     keywords=['python', 'azure', 'rbac', 'azurearc', 'authentication', 'azmanagement'],
     classifiers=[
-        "Development Status :: 1 - Planning",
+        "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Operating System :: Unix",
+        "Operating System :: Windows",
     ],
     project_urls={
         'Source': 'https://github.com/ikbendion/PyARCrbac',
