@@ -29,7 +29,6 @@ setup(
         "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Operating System :: Unix",
-        "Operating System :: Windows",
     ],
     project_urls={
         'Source': 'https://github.com/ikbendion/PyARCrbac',
