@@ -6,7 +6,7 @@ here = os.path.abspath(os.path.dirname(__file__))
 this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
-VERSION = '0.0.8'
+VERSION = '0.0.9'
 DESCRIPTION = 'A Library that simplifies interaction with Azure / ARC Metadata services.'
 
 # Setting up

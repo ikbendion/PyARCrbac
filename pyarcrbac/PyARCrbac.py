@@ -7,7 +7,7 @@ class pyrbac:
         """
         graphurl = "http://127.0.0.1:40342/metadata/identity/oauth2/token?api-version=2019-11-01&resource=https%3A%2F%2Fgraph.microsoft.com"
         headers = {"Metadata": "true"}
-        response = requests.get(self.graphurl, headers=headers)
+        response = requests.get(graphurl, headers=headers)
         
         for item, data in response.headers.items():
             if item == "Www-Authenticate":
